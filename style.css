@@ -9,33 +9,80 @@ body {
     min-height: 100vh;
 }
 
+/* Menu */
 .menu {
-    width: 45%;
-    padding: 80px 0 0 40px;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 620px;
 }
 
+/* On cache le titre HTML car le logo est déjà dans l'image */
 h1 {
-    font-size: 45px;
-    margin-bottom: 50px;
-    text-shadow: 3px 3px 8px black;
+    display: none;
 }
 
+/* Boutons */
 button {
     display: block;
-    width: 100%;
-    max-width: 500px;
-    margin: 18px 0;
-    padding: 20px;
+    width: 320px;
+    margin: 18px auto;
+    padding: 18px 25px;
+
     font-size: 22px;
     font-weight: bold;
     color: white;
-    background-color: rgba(0, 0, 0, 0.75);
-    border: 2px solid white;
-    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #050505 0%,
+        #160000 45%,
+        #d00000 100%
+    );
+
+    border: 3px solid #ff2020;
+    border-radius: 4px;
+
+    box-shadow:
+        0 0 8px #ff0000,
+        inset 0 0 15px rgba(255, 0, 0, 0.35);
+
     cursor: pointer;
+
+    clip-path: polygon(
+        8% 0%,
+        100% 0%,
+        92% 100%,
+        0% 100%
+    );
+
+    transition: 0.2s;
 }
 
+/* Quand on appuie / passe dessus */
 button:hover {
-    background-color: rgba(180, 0, 0, 0.85);
-    transform: scale(1.03);
+    transform: scale(1.05);
+    background: linear-gradient(
+        135deg,
+        #220000,
+        #ff0000
+    );
+
+    box-shadow:
+        0 0 18px red,
+        inset 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Téléphone */
+@media (max-width: 600px) {
+
+    .menu {
+        padding-top: 560px;
     }
+
+    button {
+        width: 80%;
+        max-width: 360px;
+        font-size: 20px;
+        padding: 17px;
+    }
+}
