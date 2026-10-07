@@ -1,1 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("menu.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+}
 
+.menu {
+    text-align: center;
+    padding-top: 150px;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 8px black;
+}
+
+button {
+    display: block;
+    width: 300px;
+    margin: 15px auto;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(180, 0, 0, 0.85);
+    transform: scale(1.05);
+  }
