@@ -10,8 +10,8 @@ body {
 }
 
 .menu {
-    text-align: center;
-    padding-top: 150px;
+    width: 45%;
+    padding: 80px 0 0 40px;
 }
 
 h1 {
@@ -22,10 +22,11 @@ h1 {
 
 button {
     display: block;
-    width: 300px;
-    margin: 15px auto;
-    padding: 18px;
-    font-size: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 18px 0;
+    padding: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: white;
     background-color: rgba(0, 0, 0, 0.75);
@@ -36,5 +37,5 @@ button {
 
 button:hover {
     background-color: rgba(180, 0, 0, 0.85);
-    transform: scale(1.05);
-  }
+    transform: scale(1.03);
+    }
